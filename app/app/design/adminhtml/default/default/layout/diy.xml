@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <diy_adminhtml_diybackend_index>
+	<reference name="content">
+	  <block type="diy/adminhtml_diybackend" name="diybackend" template="diy/diybackend.phtml"/>
+	</reference>
+  </diy_adminhtml_diybackend_index>
+  <diy_adminhtml_slider_index>
+	<reference name="content">
+	  <block type="diy/adminhtml_slider" name="slider" />
+	</reference>
+  </diy_adminhtml_slider_index>
+</layout>
