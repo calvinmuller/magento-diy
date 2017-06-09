@@ -1,8 +1,8 @@
 <?php $slides = $this->getDatasets(); ?>
-<div class="swiper-container" id="header-slider">
-    <div class="swiper-wrapper">
+<div class="slider-stacked" id="header-slider-stacked">
+    <div class="slider-wrapper">
         <?php foreach ($slides as $slide) : ?>
-            <div class="swiper-slide">
+            <div class="stacked-slide">
                 <a href="<?php echo $slide->getLink() ?>">
                     <img alt="" src="<?php echo $slide->getImageUrl() ?>"/>
                 </a>

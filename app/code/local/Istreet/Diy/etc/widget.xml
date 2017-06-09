@@ -1,44 +1,62 @@
 <?xml version="1.0"?>
-<widgets>    
-	<diy_slider type="diy/slider" translate="name description" module="diy">
+<widgets>
+    <diy_slider type="diy/slider" translate="name description" module="diy">
         <name>Slider</name>
         <description type="desc">Slider</description>
         <parameters>
-		    <parameter1>
-                <label>parameter 1</label>
+            <slides>
+                <label>Slides</label>
                 <visible>1</visible>
                 <required>1</required>
                 <type>text</type>
-				<value>parameter1</value>
-            </parameter1>
-		    <parameter2>
-                <label>parameter 2</label>
-                <visible>1</visible>
+                <value>1</value>
+            </slides>
+
+            <template>
                 <required>1</required>
-                <type>textarea</type>
-				<value>parameter2</value>
-            </parameter2>
-		    <parameter3>
-                <label>parameter 3</label>
                 <visible>1</visible>
-                <required>1</required>
+                <label>Template</label>
                 <type>select</type>
-                <source_model>adminhtml/system_config_source_yesno</source_model>
-            </parameter3>
-		    <parameter4>
-                <label>parameter 4</label>
-                <visible>1</visible>
-                <required>1</required>
-                <type>multiselect</type>
-                <source_model>adminhtml/system_config_source_yesno</source_model>
-            </parameter4>
-		    <parameter5>
-                <label>parameter 5</label>
-                <visible>1</visible>
-                <required>1</required>
-                <type>password</type>
-				<value>parameter5</value>
-            </parameter5>
+                <value>diy/index.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>diy/index.phtml</value>
+                        <label>Full screen slider</label>
+                    </default>
+                    <stacked translate="label">
+                        <value>diy/slider/stacked.phtml</value>
+                        <label>Image Stacked on top of each other</label>
+                    </stacked>
+                </values>
+            </template>
         </parameters>
     </diy_slider>
+
+    <diy_categories type="diy/category_list" translate="name description" module="diy">
+        <name>Category List</name>
+        <description type="desc">List selected categories</description>
+        <parameters>
+            <categories>
+                <label>Categories, comma separated ID list</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <value>1</value>
+            </categories>
+
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Template</label>
+                <type>select</type>
+                <value>diy/category/list.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>diy/category/list.phtml</value>
+                        <label>Landing Page Category Lists</label>
+                    </default>
+                </values>
+            </template>
+        </parameters>
+    </diy_categories>
 </widgets>

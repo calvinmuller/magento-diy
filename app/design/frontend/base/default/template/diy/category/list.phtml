@@ -1,0 +1,22 @@
+<?php $categories = $this->getCollection(); ?>
+
+<div class="small-promos">
+    <div class="row">
+        <?php foreach ($categories as $category) : ?>
+            <div class="columns large-6">
+                <div class="image-text-widget">
+                    <a href="<?php echo $category->getUrl(); ?>">
+                        <img alt="<?php echo $category->getName(); ?>"
+                             src="<?php echo $category->getImageUrl() ?>"/>
+                        <div class="caption">
+                            <div class="bg"></div>
+                            <div class="inner">
+                                <h1>SHOP <?php echo $category->getName() ?></h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>

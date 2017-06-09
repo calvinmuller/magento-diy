@@ -1,20 +1,24 @@
-<?xml version="1.0"?>   
-<layout version="0.1.0">   
-  <diy_index_index>   
-    <reference name="root">   
-      <action method="setTemplate"><template>page/1column.phtml</template></action>   
-    </reference>   
-    <reference name="content">   
-      <block type="diy/index" name="diy_index" template="diy/index.phtml"/>   
-    </reference>   
-  </diy_index_index>  
-  <diy_slider_index>
-    <reference name="root">   
-      <action method="setTemplate"><template>page/1column.phtml</template></action>   
-    </reference>   
-    <reference name="content">   
-      <block type="diy/slider" name="diy_slider" template="diy/slider.phtml"/>   
-    </reference>
-  </diy_slider_index>  
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <diy_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="diy/index" name="diy_index" template="diy/index.phtml"/>
+        </reference>
+    </diy_index_index>
+    <diy_slider_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="diy/slider" name="diy_slider" template="diy/slider.phtml"/>
+        </reference>
+    </diy_slider_index>
 </layout>   
 	
